@@ -1,0 +1,25 @@
+1. Framework
+    Framework là một nền tảng để phát triển ứng dụng phần mềm. Nó cung cấp 
+    cách thức để các lập trình viên có thể xây dựng chương trình trên một 
+    nền tảng cụ thể. Ví dụ, một framework có thể bao gồm những lớp được định 
+    nghĩa sẵn hoặc những hàm có thể dùng để nhận input, quản lý thiết bị phần 
+    cứng hoặc kết nối với hệ thống phần mềm. Những phần có sẵn này sẽ giúp cho 
+    lập trình viên không cần làm lại những phần việc giống nhau mỗi lần phát 
+    triển một ứng dụng mới.
+
+2. Spring 
+    Spring hỗ trợ việc tạo một ứng dụng java trong doanh nghiệp một cách 
+    dễ dàng. Nó cung cấp mọi thứ cần thiết để ứng dụng ngôn ngữ java trong 
+    môi trường doanh nghiệp bằng việc hỗ trợ cho Groovy, Kotlin và những 
+    ngôn ngữ tương tự trong JVM, và những tiện lợi để triển khai nhiều loại 
+    kiến trúc phụ thuộc vào yêu cầu ứng dụng
+    Spring framework được chia thành các module. Các ứng dụng có thể lựa chọn 
+    những module mà chúng cần. 
+
+3. Một số java framework
+    - JSF 
+    - JavaServer Faces
+    - Struts
+    - Hibernate
+    - GWT - Google Web Toolkit
+    - Vaadin

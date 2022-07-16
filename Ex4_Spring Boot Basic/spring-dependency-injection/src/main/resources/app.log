@@ -1,0 +1,296 @@
+2022-07-15 08:59:37.865  INFO 13605 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 13605 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 08:59:37.867  INFO 13605 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 08:59:38.320  INFO 13605 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.784 seconds (JVM running for 1.083)
+2022-07-15 08:59:38.322  INFO 13605 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 08:59:38.325 ERROR 13605 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:18) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:23) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 09:00:51.643  INFO 13734 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 13734 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 09:00:51.645  INFO 13734 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 09:00:52.085  INFO 13734 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.787 seconds (JVM running for 1.073)
+2022-07-15 09:00:52.087  INFO 13734 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:00:52.092 ERROR 13734 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:18) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:23) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 09:04:30.149  INFO 13940 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 13940 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 09:04:30.151  INFO 13940 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 09:04:30.567  INFO 13940 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.745 seconds (JVM running for 1.047)
+2022-07-15 09:04:43.923  INFO 13940 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:04:43.935 ERROR 13940 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:20) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:37) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 09:22:34.054  INFO 18206 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 18206 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 09:22:34.056  INFO 18206 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 09:22:34.508  INFO 18206 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.81 seconds (JVM running for 1.108)
+2022-07-15 09:22:40.013  INFO 18206 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:22:40.026 ERROR 18206 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:20) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:37) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 09:24:37.632  INFO 18490 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 18490 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 09:24:37.634  INFO 18490 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 09:24:38.064  INFO 18490 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.753 seconds (JVM running for 1.033)
+2022-07-15 09:24:42.627  INFO 18490 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:24:42.644 ERROR 18490 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:20) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:37) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 09:25:31.220  INFO 18688 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 18688 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 09:25:31.222  INFO 18688 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 09:25:31.738  INFO 18688 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.864 seconds (JVM running for 1.149)
+2022-07-15 09:25:34.975  INFO 18688 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:25:34.987 ERROR 18688 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:20) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:37) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:33) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 09:42:26.172  INFO 19624 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 19624 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 09:42:26.174  INFO 19624 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 09:42:26.629  INFO 19624 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.778 seconds (JVM running for 1.072)
+2022-07-15 09:42:30.245  INFO 19624 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:42:30.257 ERROR 19624 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:40) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 10:08:26.707  INFO 22625 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 22625 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:08:26.709  INFO 22625 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:08:26.942  WARN 22625 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'printer' defined in class path resource [com/sapo/edu/demo/Config.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=config; factoryMethodName=printer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/sapo/edu/demo/Config.class]] for bean 'printer': There is already [Generic bean: class [com.sapo.edu.demo.PrinterConsole]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/home/tep/java-training/baitap/spring-dependency-injection/target/classes/com/sapo/edu/demo/PrinterConsole.class]] bound.
+2022-07-15 10:08:26.953  INFO 22625 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 10:08:26.955 ERROR 22625 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'printer', defined in class path resource [com/sapo/edu/demo/Config.class], could not be registered. A bean with that name has already been defined in file [/home/tep/java-training/baitap/spring-dependency-injection/target/classes/com/sapo/edu/demo/PrinterConsole.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-07-15 10:09:09.974  INFO 22762 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 22762 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:09:09.976  INFO 22762 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:09:10.270  WARN 22762 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoApplication': Unsatisfied dependency expressed through field 'bidvAtm'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bidvAtm': Unsatisfied dependency expressed through field 'printer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.sapo.edu.demo.Printer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value="Printer")}
+2022-07-15 10:09:10.277  INFO 22762 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 10:09:10.565 ERROR 22762 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field printer in com.sapo.edu.demo.BidvAtm required a bean of type 'com.sapo.edu.demo.Printer' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'com.sapo.edu.demo.Printer' in your configuration.
+
+2022-07-15 10:11:45.582  INFO 23281 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 23281 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:11:45.584  INFO 23281 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:11:45.883  WARN 23281 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoApplication': Unsatisfied dependency expressed through field 'printer'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.sapo.edu.demo.Printer' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value="printer")}
+2022-07-15 10:11:45.890  INFO 23281 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 10:11:46.012 ERROR 23281 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field printer in com.sapo.edu.demo.DemoApplication required a bean of type 'com.sapo.edu.demo.Printer' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+	- @org.springframework.beans.factory.annotation.Qualifier(value="printer")
+
+The following candidates were found but could not be injected:
+	- User-defined bean
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'com.sapo.edu.demo.Printer' in your configuration.
+
+2022-07-15 10:13:06.874  INFO 23470 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 23470 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:13:06.876  INFO 23470 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:13:07.298  INFO 23470 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.765 seconds (JVM running for 1.046)
+2022-07-15 10:13:16.518  INFO 23470 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 10:13:16.534 ERROR 23470 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:38) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 10:14:48.855  INFO 23706 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 23706 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:14:48.857  INFO 23706 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:14:49.326  INFO 23706 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.802 seconds (JVM running for 1.079)
+2022-07-15 10:14:53.002  INFO 23706 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 10:14:53.016 ERROR 23706 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:319) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	at com.sapo.edu.demo.DemoApplication.main(DemoApplication.java:22) ~[classes/:na]
+Caused by: java.lang.NullPointerException: null
+	at com.sapo.edu.demo.BidvAtm.printCurrentMoney(BidvAtm.java:38) ~[classes/:na]
+	at com.sapo.edu.demo.DemoApplication.run(DemoApplication.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:781) ~[spring-boot-2.1.10.RELEASE.jar:2.1.10.RELEASE]
+	... 5 common frames omitted
+
+2022-07-15 10:19:57.582  INFO 24176 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 24176 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:19:57.585  INFO 24176 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:19:58.078  INFO 24176 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.843 seconds (JVM running for 1.13)
+2022-07-15 10:26:05.155  INFO 24764 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 24764 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:26:05.158  INFO 24764 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:26:05.469  WARN 24764 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'demoApplication': Unsatisfied dependency expressed through field 'bidvAtm'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bidvAtm': Unsatisfied dependency expressed through field 'printer'; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.sapo.edu.demo.Printer' available: expected single matching bean but found 2: printerConsole,printerFile
+2022-07-15 10:26:05.476  INFO 24764 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 10:26:05.478 ERROR 24764 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field printer in com.sapo.edu.demo.BidvAtm required a single bean, but 2 were found:
+	- printerConsole: defined in file [/home/tep/java-training/baitap/spring-dependency-injection/target/classes/com/sapo/edu/demo/PrinterConsole.class]
+	- printerFile: defined in file [/home/tep/java-training/baitap/spring-dependency-injection/target/classes/com/sapo/edu/demo/PrinterFile.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2022-07-15 10:26:50.193  INFO 24896 --- [main] com.sapo.edu.demo.DemoApplication        : Starting DemoApplication on tep-Latitude-E5570 with PID 24896 (/home/tep/java-training/baitap/spring-dependency-injection/target/classes started by tep in /home/tep/java-training/baitap/spring-dependency-injection)
+2022-07-15 10:26:50.195  INFO 24896 --- [main] com.sapo.edu.demo.DemoApplication        : No active profile set, falling back to default profiles: default
+2022-07-15 10:26:50.643  INFO 24896 --- [main] com.sapo.edu.demo.DemoApplication        : Started DemoApplication in 0.768 seconds (JVM running for 1.034)
+2022-07-15 10:26:50.644  INFO 24896 --- [main] app.log                                  : Enter your Account Number:
+2022-07-15 10:27:00.657  INFO 24896 --- [main] app.log                                  : Enter your pin:
+2022-07-15 10:27:04.582  INFO 24896 --- [main] app.log                                  : CustomerId: aaa, balance: 5000000
+2022-07-15 10:27:04.584  INFO 24896 --- [main] app.log                                  : ATM is out of money
+2022-07-15 10:27:04.585  INFO 24896 --- [main] app.log                                  : Insufficient Balance

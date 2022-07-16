@@ -1,0 +1,30 @@
+1. Tight Coupling
+	Tight Coupling nghĩa là các class và object phụ thuộc lẫn nhau. Thông thường,
+	tính chất này là không tốt vì nó là giảm sự mềm dẻo và giảm khả năng tái sử 
+	dụng của code.
+	- Tightly coupled object là một object mà muốn sử dụng nó thì cần phải biết về các 
+	object khác và nó thường phụ thuộc chặt chẽ vào interface của các object khác
+	- Khi thay đổi một object trong một tightly coupled application thường sẽ phải 
+	thay đổi một số object khác
+	- Trong một application nhỏ, ta có thể dễ dàng tìm ra những thay đổi và những
+	thay đổi này là đủ nhỏ để không gây ảnh hưởng gì. Nhưng trong một dự án lớn, không
+	phải lập trình viên nào cũng biết hết về các phụ thuộc được dùng nên khả năng lỗi
+	rất cao.
+
+2. Loose Coupling
+	- Loose coupling là một mục tiêu trong thiết kế dự án để giảm inter-dependencies
+	giữa các thành phần của một hệ thống giúp cho việc thay đổi một thành phần nào đấy 
+	được tiện lợi hơn mà không phải lo đến việc bị ảnh hưởng đến các thành phần khác.
+	- Loose coupling là một khái niệm quan trọng để tăng cường tính mềm dẻo của hệ thông
+	, làn cho hệ thống dễ bảo trì hơn và làm cho framework được ổn định hơn.
+
+3. Dependency Injection
+	-Dependency Injection là một kỹ thuật được dùng trong lập 
+	trình hướng đối tượng, theo đó, các object sẽ tập trung vào
+	thực hiện các chức năng của nó, sử dụng các object khác. Các
+	cấu hình và khởi tạo cần thiết sẽ không bị ảnh hưởng bởi 
+	object. Tuy nhiên, object sẽ được cung cấp một cách để khởi 
+	tạo chúng và các phụ thuộc của chúng bằng field assignment,
+	setter hoặc constructors. Bằng cách này, các thực thể có thể
+	sử dụng các phương thức mà không cần một object thực sự.
+	

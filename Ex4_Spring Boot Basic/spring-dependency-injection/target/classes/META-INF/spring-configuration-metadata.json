@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "atm",
+      "type": "com.sapo.edu.demo.BidvAtm",
+      "sourceType": "com.sapo.edu.demo.BidvAtm"
+    }
+  ],
+  "properties": [
+    {
+      "name": "atm.money-atm",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.sapo.edu.demo.BidvAtm"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,220 @@
+1. Hệ quản trị CSDL:
+  a. Khái niệm:
+	Hệ quản trị cơ sở dữ liệu (DBMS) là một phần mềm cho phép
+	tạo lập các CSDL cho các ứng dụng khác nhau và điều khiển 
+	mọi truy cập tới các CSDL đó. Nghĩa là, hệ quản trị CSDL 
+	cho phép định nghĩa (xác định kiểu, cấu trúc, ràng buộc 
+	dữ liệu), tạo lập (lưu trữ dữ liệu trên các thiết bị nhớ) 
+	và thao tác (truy vấn, cập nhật, kết xuất, ...) các CSDL 
+	cho các ứng dụng khác nhau. 
+	Ví dụ: MS. Access, MS. SQL Server, ORACLE, IBM DB2, ...
+  b. Kiến trúc		
+     --Bộ quản lý lưu trữ
+	- Lưu trữ và truy vấn dữ liệu trên các thiết bị nhớ
+	- Tổ chức tối ưu dữ liệu trên thiết bị nhớ
+	- Tương tác hiệu quả với bộ quản lý tệp
+     --Bộ xử lý câu hỏi
+	- Tìm kiếm dữ liệu trả lời cho một yêu cầu truy vấn
+	- Biến đổi truy vấn ở mức cao thành các yêu cầu có thể 
+	hiểu được bởi hệ CSDL.
+	- Lựa chọn một kế hoạch tốt nhất để trả lời truy vấn này.
+     --Bộ quản lý giao dịch
+	- Định nghĩa giao dịch: một tập các thao tác được xử lý 
+	như một đơn vị không chia căt được.
+	- Đảm bảo tính đúng đắn và tính nhất quán của dữ liệu.
+	- Quản lý điều khiển tương tranh.
+	- Phát hiện lỗi và phục hồi CSDL.
+
+2. SQL:
+   Khái niệm:
+	SQL chính là viết tắt của Structured Query language, 
+	là ngôn ngữ chuẩn để xử lý Cơ sở dữ liệu quan hệ. 
+	Một cơ sở dữ liệu quan hệ xác định các mối quan hệ dưới dạng
+	các bảng.	
+	Lập trình SQL có thể được sử dụng hiệu quả để chèn, tìm kiếm,
+	cập nhật, xóa các bản ghi cơ sở dữ liệu.
+	Điều đó không có nghĩa là SQL không thể làm được gì ngoài 
+	việc đó. Nó có thể làm rất nhiều thứ bao gồm, nhưng không 
+	giới hạn, tối ưu hóa và duy trì cơ sở dữ liệu.
+
+3. NoSQL:
+	NoSQL là một DMS không quan hệ, không yêu cầu một lược đồ 
+	cố định, tránh các phép nối, và dễ dàng mở rộng. Cơ sở dữ 
+	liệu NoSQL được sử dụng cho các kho dữ liệu phân tán với 
+	nhu cầu lưu trữ dữ liệu khổng lồ. NoSQL được sử dụng cho dữ 
+	liệu lớn và các ứng dụng web thời gian thực.
+	RDBMS truyền thống sử dụng cú pháp SQL để lưu trữ và 
+	truy xuất dữ liệu để có thêm thông tin chi tiết. Thay vào đó, 
+	một hệ thống cơ sở dữ liệu NoSQL bao gồm một loạt các công 
+	nghệ cơ sở dữ liệu có thể lưu trữ dữ liệu có cấu trúc, bán 
+	cấu trúc, không có cấu trúc và đa hình.
+
+4. Các lệnh cơ bản trong SQL:
+    a. SELECT
+	- Tác dụng:
+	    Chọn dữ liệu từ cơ sở dữ liệu
+	- Cách dùng: SELECT [cột muốn chọn] FROM [bảng muốn chọn]
+    b. WHERE
+	- Tác dụng:
+	    Cho phép áp dụng điều kiện vào SELECT
+	- Cách dùng:
+	    SELECT [cột muốn chọn] FROM [bảng muốn chọn] 
+		WHERE [điều kiện]
+    c.ORDER
+	- Tác dụng:
+	    Sắp xếp kết quả trả về theo một điều kiện nhất định
+	- Cách dùng:
+	    Thêm ORDER vào cuối câu lệnh SELECT
+	    SELECT ... ORDER BY [cột] [ASC/DESC]
+	    với ASC là theo thứ tự tăng dần
+	    	DESC là theo thứ tự giảm dần
+    d. JOIN
+	- Tác dụng:
+	    Lệnh JOIN được sử dụng để kết hợp các dữ liệu liên quan 
+	    được lưu trữ trong một hoặc nhiều bảng. Ta có thể nối 
+	    bảng thứ hai vào bảng đầu tiên, và chỉ định cách dữ liệu 
+	    được kết nối
+	- Cách dùng:
+	    Ví dụ:
+		SELECT age, name, height 
+		FROM people LEFT JOIN heights USING (name);
+	    Câu lệnh trên nghĩa là in ra cột age, name, height 
+	    trong hai bảng people và heights, 2 bảng này cùng có 
+	    cột name giống nhau
+	- Các loại JOIN:
+	    - (INNER) JOIN: Trả về các hàng có trong cả hai bảng.
+	    - LEFT (OUTTER) JOIN: Trả về tất cả các hàng từ bảng 
+	    bên trái cùng với những bản ghi phù hợp ở bảng bên phải.
+	    Nếu không có bản ghi nào phù hợp thì những bản ghi ở 
+	    bảng bên trái vẫn được trả về.
+	    - RIGHT (OUTER) JOIN: Trái ngược với kiểu nối bên trên, 
+	    tất cả các hàng của bảng bên phải sẽ được trả về cùng 
+	    với những hàng phù hợp của bảng bên trái.
+	    - FULL (OUTER) JOIN: Trả về tất cả những bản ghi phù hợp
+	    ở trong hai bảng.
+
+5. Function và Store Procedure
+    - Là đoạn chương trình kịch bản (programming scripts) với các câu lệnh 
+      SQL nhúng (embedded SQL) được lưu dưới dạng đã được biên dịch và 
+      thi hành thực tiếp bởi MySQL server.
+    - Store Procedure cho phép lưu trữ các logic ứng dụng trên CSDL.
+
+6. Transaction
+    Transaction trong SQL là một nhóm các câu lệnh SQL, xử lý có tuần tự 
+    các thao tác trên cơ sở dữ liệu . Nếu một transaction được thực hiện 
+    thành công, tất cả các thay đổi dữ liệu được thực hiện trong transaction 
+    được lưu vào cơ sở dữ liệu. Nếu một transaction bị lỗi và được rollback 
+    thì tất cả các sửa đổi dữ liệu sẽ bị xóa (dữ liệu được khôi phục về 
+    trạng thái trước khi thực hiện transaction).		
+    
+    Transaction có một chuẩn gọi là ACID bao gồm 4 thuộc tính:
+	-- Atomicity (Tính tự trị): Đảm bảo tất cả các hành động trong phạm vi 
+	một đơn vị transaction là thành công hoàn toàn. Ngược lại, transaction 
+	sẽ bị dừng ngay ở thời điểm lỗi, và sẽ phục hồi quay ngược (rollback) 
+	lại thời điểm chưa xảy ra sự thay đổi.
+
+	-- Consistency (Tính nhất quán): Đảm bảo tất cả các thao tác trên 
+	cơ sở dữ liệu được thay đổi sau khi giao dịch thành công và không 
+	xảy ra lỗi.
+
+	-- Isolation (Tính cô lập): Đảm bảo transaction này hoạt động độc lập 
+	so với transaction khác. Ví dụ C đang chuyển tiền thì sẽ không 
+	liên quan tới D chuyển tiền.
+
+	-- Durability (Tính bền vững): Đảm bảo kết quả hoặc tác động của 
+	transaction vẫn luôn tồn tại, kể cả khi hệ thống xảy ra lỗi.
+
+7. Thực hành viết câu lệnh 
+
+#Tạo các bảng
+CREATE TABLE inventory (
+    id decimal,
+    inventory_code varchar(255),
+    address varchar(255),
+    created_date datetime,
+    edited_date datetime,
+    PRIMARY KEY (id)
+);
+CREATE TABLE category (
+    id decimal,
+    category_code varchar(255),
+    category_name varchar(255),
+    descriptions text,
+    created_date datetime,
+    edited_date datetime,
+    PRIMARY KEY (id)
+);
+CREATE TABLE product (
+    id decimal,
+    product_code varchar(255),
+    category varchar(255),
+    inventory varchar(255),
+    product_name varchar(255),
+    descriptions text,
+    photo_link varchar(255),
+    number_product int,
+    number_sell_product int,
+    created_date datetime,
+    edited_date datetime,
+    PRIMARY KEY (id)
+);
+
+#Thêm giá trị vào bảng
+INSERT INTO inventory
+VALUES ('1', 'kho1', 'BaDinh', '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO inventory
+VALUES ('2', 'kho2', 'CauGiay', '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO inventory
+VALUES ('3', 'kho3', 'ThanhXuan', '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO inventory
+VALUES ('4', 'kho4', 'HaDong', '2022-01-01 15:30:00', '2022-07-01 15:30:00')
+
+INSERT INTO category
+VALUES ('1', 'cate1', 'Apple', 'From USA', '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO category
+VALUES ('2', 'cate2', 'SamSung', 'From Korea', '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO category
+VALUES ('3', 'cate3', 'Oppo', 'From China', '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO category
+VALUES ('4', 'cate4', 'B', 'From Vietnam', '2022-01-01 15:30:00', '2022-07-01 15:30:00')
+
+
+INSERT INTO product
+VALUES ('1', 'pr1', 'Apple', 'BaDinh', 'May tinh','From USA','https://www.facebook.com/anh',100,90, '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO product
+VALUES ('2', 'pr2', 'SamSung', 'CauGiay', 'Dien thoai','From Korea','https://www.facebook.com/anh',90,80, '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO product
+VALUES ('3', 'pr3', 'Oppo', 'ThanhXuan', 'Dien thoai','From China','https://www.facebook.com/anh',80,70, '2022-01-01 15:30:00', '2022-07-01 15:30:00');
+
+INSERT INTO product
+VALUES ('4', 'pr4', 'B', 'HaDong', 'Dien thoai','From Vietnam','https://www.facebook.com/anh',70,60, '2022-01-01 15:30:00', '2022-07-01 15:30:00')
+
+#Lọc dữ liệu
+SELECT * FROM product
+WHERE product_name LIKE 'Dien Thoai' AND category LIKE 'Apple'
+
+SELECT category, COUNT(category) 
+FROM product
+GROUP BY category
+ORDER BY COUNT(category) DESC;
+
+DELETE FROM category WHERE category_name LIKE 'Apple';
+DELETE FROM product WHERE category LIKE 'Apple';
+COMMIT
+
+DELIMITER $$
+CREATE PROCEDURE ban_nhieu_nhat()
+BEGIN
+	SELECT * FROM product 
+	ORDER BY number_sell_product ASC
+	LIMIT 10;
+END;; $$
+CALL ban_nhieu_nhat();
