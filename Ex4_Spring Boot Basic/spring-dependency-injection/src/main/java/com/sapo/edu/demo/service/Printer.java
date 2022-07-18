@@ -1,4 +1,6 @@
-package com.sapo.edu.demo;
+package com.sapo.edu.demo.service;
+
+import com.sapo.edu.demo.entity.Customer;
 
 //import org.springframework.stereotype.Component;
 

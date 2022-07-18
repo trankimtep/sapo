@@ -2,15 +2,15 @@
   "groups": [
     {
       "name": "atm",
-      "type": "com.sapo.edu.demo.BidvAtm",
-      "sourceType": "com.sapo.edu.demo.BidvAtm"
+      "type": "com.sapo.edu.demo.entity.BidvAtm",
+      "sourceType": "com.sapo.edu.demo.entity.BidvAtm"
     }
   ],
   "properties": [
     {
       "name": "atm.money-atm",
       "type": "java.math.BigDecimal",
-      "sourceType": "com.sapo.edu.demo.BidvAtm"
+      "sourceType": "com.sapo.edu.demo.entity.BidvAtm"
     }
   ],
   "hints": []

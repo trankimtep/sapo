@@ -1,7 +1,10 @@
-package com.sapo.edu.demo;
+package com.sapo.edu.demo.service.implementer;
 
 //import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+
+import com.sapo.edu.demo.entity.Customer;
+import com.sapo.edu.demo.service.Printer;
 
 @Component
 public class PrinterConsole implements Printer {

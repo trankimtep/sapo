@@ -1,8 +1,10 @@
-package com.sapo.edu.demo;
+package com.sapo.edu.demo.entity;
 
 import java.math.BigDecimal;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.sapo.edu.demo.service.Printer;
 
 public class Customer {
     @Autowired
