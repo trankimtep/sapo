@@ -3,9 +3,6 @@ package com.example.demo.model;
 import java.sql.Timestamp;
 // import java.util.Date;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Inventory {
     private String id, inventory_code, address;
     private Timestamp created_date;

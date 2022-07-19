@@ -124,10 +124,10 @@ public class Product {
         this.edited_date = Timestamp;
     }
     public String toString(){
-        return "[ id=" + id + " product_code=" + product_code + " category="+ category 
-                + "inventory=" + inventory + "product_name=" + product_name 
-                + "description=" + description + "photo_link=" + photo_link 
-                + "number_product=" + number_product + "number_sell_product=" + number_sell_product 
-                +"created_date=" + created_date + "edited_date=" + edited_date + "]";
+        return "[ id=" + id + "\n product_code=" + product_code + "\n category="+ category 
+                + "\n inventory=" + inventory + "\n product_name=" + product_name 
+                + "\n description=" + description + "\n photo_link=" + photo_link 
+                + "\n number_product=" + number_product + "\n number_sell_product=" + number_sell_product 
+                +"\n created_date=" + created_date + "\n edited_date=" + edited_date + "]";
     }
 }
