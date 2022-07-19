@@ -1,0 +1,52 @@
+1. API là gì?
+	Application programming interface là một phần của code
+	giúp cho các thiết bị số, các ứng dụng phần mềm, các server
+	có thể giao tiếp được với nhau và nó là nền tảng của nhiều
+	dịch vụ mà chúng ta đang sử dụng. API làm nhiệm vụ trả về data
+	hình ảnh, video, ... dưới dạng dữ liệu mà máy tính có thể đọc
+	và thiết bị cuối sẽ chuyển đổi các dạng dữ liệu đó thành 
+	dạng thân thiện hơn với người dùng.
+
+2. REST API
+	Representation state transfer là một kiểu kiến trúc phần mềm
+	mà trong đó xác định những quy định mà các hệ thống khác 
+	nhau giao tiếp với nhau. Một API mà tuân theo quy tắc REST
+	được gọi là REST API.
+	Sáu nguyên tắc của REST:
+	 -  Kiến trúc Client-Server: REST API phân biệt rõ ràng bên
+	    client là bên yêu cầu dữ liệu so với bên server là bên
+	    cung cấp dữ liệu. Client sẽ không cần quan tâm xem server
+	    lưu trữ dữ liệu như thế nào.
+
+	 -  Uniform interface: bên client dù là browser, mobile app 
+	    hay bất kì cái gì thì nó cũng có thể truy cập và 
+	    sử dụng REST API bằng cách giống nhau. 
+
+	 -  Statelessness: Server không ghi nhớ trạng thái của client.
+	    Tất cả các request của client đều không được ghi nhớ nên
+	    chúng đều phải bao gồm đầy đủ các thông tin cần thiết (
+	    Ví dụ như thông tin xác thực của client)
+
+	 -  Cacheability: Rest servers có thể cache dữ liệu để dùng 
+	    lại để sử dụng cho những request trong tương lai.
+
+	 -  Layered system: REST APIs có thể có nhiều lớp trung gian
+	    giữa client và server. Tuy nhiên là client không cần 
+	    phải biết về chúng
+	 
+3. Tại sao phải dùng REST API?
+	a. Làm đơn giản hóa việc lập trình
+	   Nếu không có API, thì khi muốn giao tiếp với một phần mềm
+	   hay service của một bên thứ 3, ltv lại phải viết ra một 
+	   giao thức mới.
+           Việc tạo một ngôn ngữ chung cho tất cả các hệ thống
+	   là cần thiết để giải quyết vấn đề này.
+	b. Cú pháp đơn giản
+	   Việc giao tiếp giữa các hệ thống khác nhau, dù có tuân 
+	   theo một quy tắc cụ thể thì cũng không dễ dàng vì các vấn
+	   đề bậc thấp như định dạng dữ liệu, vận chuyển dữ liệu,..
+	   APIs giải quyết vấn đề này bằng cách cung cấp các cú pháp
+	   bậc cao, thuận tiện cho việc tra cứu và sử dụng.
+ 	   
+			
+
