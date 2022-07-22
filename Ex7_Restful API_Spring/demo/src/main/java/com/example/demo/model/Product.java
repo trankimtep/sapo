@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 import org.springframework.stereotype.Component;
 @Component
 public class Product {
-    private String id;
+    private int id;
     private String product_code;
     private String category;
     private String inventory;
@@ -23,7 +23,7 @@ public class Product {
     public Product(String id, String product_code, String category, String inventory, 
                     String product_name, String description, String photo_link, 
                     int number_product, int number_sell_product, Timestamp created_date, Timestamp edited_date){
-    this.id = id;
+    this.id = Integer.parseInt(id);
     this.product_code = product_code;
     this.category = category;
     this.inventory = inventory;
@@ -36,11 +36,11 @@ public class Product {
     this. edited_date = edited_date;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int i) {
         this.id = id;
     }
 

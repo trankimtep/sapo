@@ -24,7 +24,7 @@ public class CategoryDaoImplementation implements CategoryDao{
             = "INSERT INTO category VALUES (?, ?, ?, ?, ?, ?)";
         PreparedStatement ps
             = con.prepareStatement(query);
-        ps.setString(1, inv.getId());
+        ps.setInt(1, inv.getId());
         ps.setString(2, inv.getCategory_code());
         ps.setString(3, inv.getCategory_name());
         ps.setString(4, inv.getDescriptions());
@@ -63,7 +63,7 @@ public class CategoryDaoImplementation implements CategoryDao{
   
         while (rs.next()) {
             check = true;
-            inv.setId(rs.getString("id"));
+            inv.setId(rs.getInt("id"));
             inv.setCategory_code(rs.getString("category_code"));
             inv.setCategory_name(rs.getString("category_name"));
             inv.setCreated_date(rs.getTimestamp("created_date"));
@@ -80,7 +80,7 @@ public class CategoryDaoImplementation implements CategoryDao{
     public List<Category> getCategories()
         throws SQLException
     {
-        String query = "SELECT * FROM iventory WHERE id = ?";
+        String query = "SELECT * FROM category ";
         PreparedStatement ps
             = con.prepareStatement(query);
         ResultSet rs = ps.executeQuery();
@@ -88,8 +88,8 @@ public class CategoryDaoImplementation implements CategoryDao{
   
         while (rs.next()) {
             Category inv = new Category();
-            inv.setId(rs.getString("id"));
-            inv.setCategory_code(rs.getString("iventory_code"));
+            inv.setId(rs.getInt("id"));
+            inv.setCategory_code(rs.getString("category_code"));
             inv.setCategory_name(rs.getString("category_name"));
             inv.setDescriptions(rs.getString("descriptions"));
             inv.setCreated_date(rs.getTimestamp("created_date"));
@@ -111,7 +111,7 @@ public class CategoryDaoImplementation implements CategoryDao{
             = con.prepareStatement(query);
         ps.setString(1, inv.getDescriptions());
         ps.setString(2, inv.getEdited_date().toString());
-        ps.setString(3, inv.getId());
+        ps.setInt(3, inv.getId());
         ps.executeUpdate();
     }
 }

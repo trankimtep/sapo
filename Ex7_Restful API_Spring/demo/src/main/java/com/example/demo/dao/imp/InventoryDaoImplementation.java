@@ -24,7 +24,7 @@ public class InventoryDaoImplementation implements InventoryDao{
             = "INSERT INTO inventory VALUES (?, ?, ?, ?, ?)";
         PreparedStatement ps
             = con.prepareStatement(query);
-        ps.setString(1, inv.getId());
+        ps.setInt(1, inv.getId());
         ps.setString(2, inv.getInventory_code());
         ps.setString(3, inv.getAddress());
         ps.setString(4, inv.getCreated_date().toString());
@@ -62,7 +62,7 @@ public class InventoryDaoImplementation implements InventoryDao{
   
         while (rs.next()) {
             check = true;
-            inv.setId(rs.getString("id"));
+            inv.setId(rs.getInt("id"));
             inv.setInventory_code(rs.getString("inventory_code"));
             inv.setAddress(rs.getString("address"));
             inv.setCreated_date(rs.getTimestamp("created_date"));
@@ -79,7 +79,7 @@ public class InventoryDaoImplementation implements InventoryDao{
     public List<Inventory> getInventories()
         throws SQLException
     {
-        String query = "SELECT * FROM iventory";
+        String query = "SELECT * FROM inventory";
         PreparedStatement ps
             = con.prepareStatement(query);
         ResultSet rs = ps.executeQuery();
@@ -87,8 +87,8 @@ public class InventoryDaoImplementation implements InventoryDao{
   
         while (rs.next()) {
             Inventory inv = new Inventory();
-            inv.setId(rs.getString("id"));
-            inv.setInventory_code(rs.getString("iventory_code"));
+            inv.setId(rs.getInt("id"));
+            inv.setInventory_code(rs.getString("inventory_code"));
             inv.setAddress(rs.getString("address"));
             inv.setCreated_date(rs.getTimestamp("created_date"));
             inv.setEdited_date(rs.getTimestamp("edited_date"));
@@ -109,7 +109,7 @@ public class InventoryDaoImplementation implements InventoryDao{
             = con.prepareStatement(query);
         ps.setString(1, inv.getAddress());
         ps.setString(2, inv.getEdited_date().toString());
-        ps.setString(3, inv.getId());
+        ps.setInt(3, inv.getId());
         ps.executeUpdate();
     }
 }

@@ -24,17 +24,17 @@ public class ProductDaoImplementation implements ProductDao{
             = "INSERT INTO product VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement ps
             = con.prepareStatement(query);
-        ps.setString(1, prod.getId());
+        ps.setInt(1, prod.getId());
         ps.setString(2, prod.getProduct_code());
         ps.setString(3, prod.getCategory());
         ps.setString(4, prod.getInventory());
         ps.setString(5, prod.getProduct_name());
         ps.setString(6, prod.getDescription());
         ps.setString(7, prod.getPhoto_link());
-        ps.setString(3, prod.getNumber_product()+"");
-        ps.setString(3, prod.getNumber_sell_product()+"");
-        ps.setString(8, prod.getCreated_date().toString());
-        ps.setString(9, prod.getEdited_date().toString());
+        ps.setString(8, prod.getNumber_product()+"");
+        ps.setString(9, prod.getNumber_sell_product()+"");
+        ps.setString(10, prod.getCreated_date().toString());
+        ps.setString(11, prod.getEdited_date().toString());
         int n = ps.executeUpdate();
         return n;
     }
@@ -68,7 +68,7 @@ public class ProductDaoImplementation implements ProductDao{
   
         while (rs.next()) {
             check = true;
-            prod.setId(rs.getString("id"));
+            prod.setId(rs.getInt("id"));
             prod.setProduct_code(rs.getString("product_code"));
             prod.setCategory(rs.getString("category"));
             prod.setInventory(rs.getString("inventory"));
@@ -101,7 +101,7 @@ public class ProductDaoImplementation implements ProductDao{
   
         while (rs.next()) {
             Product prod = new Product();
-            prod.setId(rs.getString("id"));
+            prod.setId(rs.getInt("id"));
             prod.setProduct_code(rs.getString("product_code"));
             prod.setCategory(rs.getString("category"));
             prod.setInventory(rs.getString("inventory"));
@@ -129,7 +129,7 @@ public class ProductDaoImplementation implements ProductDao{
             = con.prepareStatement(query);
         ps.setString(1, prod.getInventory());
         ps.setString(2, prod.getEdited_date().toString());
-        ps.setString(3, prod.getId());
+        ps.setInt(3, prod.getId());
         ps.executeUpdate();
     }
 }

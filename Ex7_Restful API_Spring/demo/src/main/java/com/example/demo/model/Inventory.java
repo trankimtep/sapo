@@ -4,22 +4,23 @@ import java.sql.Timestamp;
 // import java.util.Date;
 
 public class Inventory {
-    private String id, inventory_code, address;
+    int id;
+    private String inventory_code, address;
     private Timestamp created_date;
     private Timestamp edited_date;
     public Inventory(){}
     public Inventory(String id, String inventory_code, String address, Timestamp created_date, Timestamp edited_date){
-        this.id = id;
+        this.id = Integer.parseInt(id);
         this. inventory_code = inventory_code;
         this.address = address;
         this.created_date = created_date;
         this.edited_date = edited_date;  
     }
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dao.imp.ProductDaoImplementation;
@@ -16,8 +17,10 @@ import com.example.demo.model.Product;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @RestController
+@ResponseBody
 @RequestMapping("/admin/Product")
 public class ProductController {
 
@@ -34,20 +37,28 @@ public class ProductController {
     }
 
 	@PostMapping("")
-	public ResponseEntity<?> postProduct (@RequestBody Product newProduct) throws SQLException {
-		int result = new ProductDaoImplementation().add(newProduct);
-	  	return ResponseEntity.ok(result);
+	public int postProduct(@RequestBody Product product) throws SQLException {
+		return  new ProductDaoImplementation().add(product);
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<?> putProduct (@RequestBody Product newProduct) throws SQLException {
-		new ProductDaoImplementation().update(newProduct);
-	  	return ResponseEntity.ok(newProduct);
-	}
+    public ResponseEntity<?> putProduct(@RequestBody Product product, @PathVariable int id) throws SQLException {
+        try {
+            //Product existProduct = new Product();
+			ProductDaoImplementation productDaoImplementation = new ProductDaoImplementation();
+			//existProduct =  productDaoImplementation.getProduct(id);
+            product.setId(id);            
+            productDaoImplementation.add(product);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (NoSuchElementException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 
 	@DeleteMapping("/{id}")
-	public ResponseEntity<?> deleteListProduct(){
-		return null;
-	}
+	public void delete(@PathVariable int id) throws SQLException {
+		ProductDaoImplementation productDaoImplementation = new ProductDaoImplementation();
+        productDaoImplementation.delete(id);
+    }
 
 }
